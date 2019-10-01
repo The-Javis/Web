@@ -2,10 +2,14 @@ const express = require("express");
 const rp = require("request-promise");
 const app = express();
 
-rp('https://randomuser.me/api/')
-.then(function (htmlString) {
-    console.log(JSON.parse(htmlString));
-})
-.catch(function (err) {
-    console.log(err);
+app.get("/",function(req,res){
+    res.json({});
+    res.end();
 });
+
+app.listen(8000,function(){
+    console.log("run");
+});
+/*
+
+*/
