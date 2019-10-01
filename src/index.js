@@ -3,7 +3,9 @@ const rp = require("request-promise");
 const app = express();
 
 app.get("/",function(req,res){
-    res.json({});
+    res.json({
+        
+    });
     res.end();
 });
 
